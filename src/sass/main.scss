@@ -1,0 +1,13 @@
+@import 'abstract/variable';
+@import 'abstract/mixin.scss';
+
+@import 'base/base';
+@import 'base/typography.scss';
+@import 'base/utility.scss';
+
+@import 'component/navbar';
+
+@import 'layout/card.scss';
+@import 'layout/moviedetail.scss';
+
+@import 'page/home'

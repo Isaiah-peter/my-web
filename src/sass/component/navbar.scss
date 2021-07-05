@@ -1,0 +1,96 @@
+.navbar{
+  &__container{
+    width: 100%;
+    background-color: $navbar-color;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    padding: 3rem 4rem;
+  }
+  &__logo{
+    font-size: 2rem;
+    font-weight: 900;
+  }
+  &__content{
+    @include respond(tab-port){
+     position: fixed;
+     width: 40%;
+     height: 100%;
+     background: $navbar-color;
+     top: 0;
+     text-align: center;
+     right: -100%;
+     transition: all .5s;
+     display: block;
+     }
+   
+    &__ul{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      @include respond(tab-port){
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+       }
+    }
+  }
+  &__ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    @include respond(tab-port){
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+     }
+  }
+
+  &__list{
+    list-style: none;
+    font-size: 1.6rem;
+    margin-right: 6rem;
+    
+  }
+  &__link{
+      &:link,
+      &:visited{
+        text-decoration: none;
+        color: $white-color;
+        text-transform: capitalize;
+      }
+
+      
+  }
+
+  &-logo{
+    width: 2.8rem;
+    height: 2.8rem;
+    margin-right: .4rem;
+}
+}
+
+.menu{
+  display: none;
+
+  @include respond(tab-port){
+      display: block;
+      background: white;
+      padding: .8rem;
+      border-radius: 50%;
+  }
+}
+
+.show{
+  right: 0;
+}
+#close{
+  display: none;
+  @include respond(tab-port){
+      display: block;
+  }
+
+}
