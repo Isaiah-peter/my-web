@@ -1,0 +1,14 @@
+.App{
+    width: 70%;
+    margin: 0 auto;
+
+    @include respond(tab-port){
+        width: 80%;
+    }
+    @include respond(phone){
+        width: 95%;
+    }
+
+}
+
+
