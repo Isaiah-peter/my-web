@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from 'react-router-dom'
-import menu from './menu.png'
+import menu from '../img/menu.png'
 
 const Navbar = () =>{
  const hide = () => {
