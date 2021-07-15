@@ -1,10 +1,13 @@
 import react from 'react'
 import isaiahImg from '../img/imageIsaiah.png'
 import { Link } from 'react-router-dom'
+import Navbar from './navbar'
 
 const Header = () =>{
     return(
       <div className='header'>
+        <div className='row'>
+        <Navbar />
         <div className='heading'>
           <div className='header__discription'>
             <span className='header__tip'>hi there</span>
@@ -28,6 +31,7 @@ const Header = () =>{
              </div>
           </div>
       </div>
+        </div>
       </div>
     )
 }

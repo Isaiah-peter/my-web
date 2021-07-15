@@ -4,7 +4,6 @@
   }
     
     body{
-     background-color: $navbar-color;
      color: #ffffff;
      font-family: sans-serif, 'Poppins';
      box-sizing: border-box;
@@ -25,4 +24,14 @@
       @include respond(big-laptop){
         font-size: 75%;
       }
+    }
+
+    .row{
+      width: 124rem;
+      margin: 0 auto;
+
+      @include respond(tab-port){
+        max-width: 50rem;
+        margin:  0 auto;
+     }
     }

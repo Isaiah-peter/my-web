@@ -1,18 +1,19 @@
 .navbar{
   margin: 2rem;
+  
   &__container{
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
     padding: 3rem 0;
     z-index: 4;
+    
 
    
   }
   &__logo{
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 900;
   }
   &__content{
@@ -45,8 +46,11 @@
 
   &__list{
     list-style: none;
-    font-size: 1.6rem;
-    margin-left:3rem;
+    font-size: 2rem;
+    
+    &:not(:last-child){
+      margin-right: 8rem;
+    }
 
     
   }

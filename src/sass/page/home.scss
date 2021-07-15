@@ -1,14 +1,13 @@
-.App{
-    width: 70%;
-    margin: 0 auto;
 
-    @include respond(tab-port){
-        width: 80%;
-    }
-    @include respond(phone){
-        width: 95%;
-    }
-
+.heading{
+   padding-top: 12rem;
 }
 
+.bg-color{
+    background-color: #F8F8F8;
+}
+
+.abouts{
+    padding: 15rem 0;
+}
 
