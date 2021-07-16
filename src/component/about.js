@@ -1,10 +1,37 @@
 import React, { useEffect, useState } from 'react'
 import aboutI from '../img/aboutI.jpg'
-import { Link } from "react-router-dom";
-
+import {BrowserRouter as Router, Link, Route } from "react-router-dom";
+import AboutMe  from './about-component/aboutMe';
+import Skill from './about-component/skill';
+import Experience from './about-component/experience';
 
 const About = () => {
-  const [ids ,setIds] = useState('')
+
+
+  useEffect(()=>{
+    const abt = document.getElementById('abt')
+    const ski = document.getElementById('ski')
+    const exp = document.getElementById('exp')
+
+    
+
+    if(window.location.pathname === '/'){
+      abt.classList.add('active')
+      ski.classList.remove('active')
+      exp.classList.remove('active')
+    }else if(window.location.pathname === '/ski'){
+      abt.classList.remove('active')
+      ski.classList.add('active')
+      exp.classList.remove('active')
+    }else if(window.location.pathname === '/exp'){
+      abt.classList.remove('active')
+      ski.classList.remove('active')
+      exp.classList.add('active')
+    }
+  },[])
+  
+
+
 
   return (
     <div className='row'>
@@ -14,30 +41,17 @@ const About = () => {
           <div className='about__skills'>
             <div className='skills__btn mb-5'>
               <ul>
-                <li className='skills__list'><a id='about-me' 
-                onClick={()=>{}}
-                 className='active'>about me</a></li>
-                <li className='skills__list active'><a id='skill' onClick={()=>{}} >skill</a></li>
-                <li className='skills__list active'><a id='exp' onClick={()=>{}} >experience</a></li>
+                <li className='skills__list'><a href='/' id='abt' className='a' >about me</a></li>
+                <li className='skills__list '><a id='ski' href='/ski' className='a'>skill</a></li>
+                <li className='skills__list '><a id='exp' href='/exp' className='a'>experience</a></li>
               </ul>
             </div>
             <div>
-            <h1 className='skills__discription-head mb-5'>my story</h1>
-            <p className='skills__text'>
-              Far far away, behind the word mountains,
-              far from the countries Vokalia and Consonantia,
-              there live the blind texts. Separated they live
-              in Bookmarksgrove right at the coast of the Semantics,
-              a large language ocean.
-            </p>
-            <h2 className='skills__discription-sub'>
-              I Do Web Design & Developement since I was 18 Years Old
-            </h2>
-            <p className='skills__text'>
-              Far far away, behind the word mountains,
-              far from the countries Vokalia and Consonantia,
-              there live the blind texts.
-            </p>
+             <Router>
+               <Route exact path='/' component={AboutMe}/>
+               <Route exact path='/ski' component={Skill}/>
+               <Route exact path='/exp' component={Experience}/>
+             </Router>
             </div>
           </div>
         </div>

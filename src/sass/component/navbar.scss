@@ -1,15 +1,15 @@
 .navbar{
-  margin: 2rem;
+ width: 100%;
+ position: sticky;
+ top: 0;
+ background-color: $navbar-color;
   
   &__container{
-    width: 100%;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 3rem 0;
-    z-index: 4;
-    
-
    
   }
   &__logo{

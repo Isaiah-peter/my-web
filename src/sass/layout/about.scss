@@ -37,45 +37,120 @@
         }
     }
 
-    &__list a{
-        &,
-        &:link,
-        &:visited{
-            border-radius: .3rem;
-            padding: 1.5rem 2rem;
-            color: #878787;
-            font-size: 1.7rem;
-            background-color: #fff;
-            font-weight: 600;
-            text-transform: uppercase;
-            cursor: pointer;
-        }
-
-        &::after{
-            
-        }
-    }
+   
     &__discription{
         &-head{
-            font-size: 6rem;
+            font-size: 5rem;
             color: #323232;
             text-transform: capitalize;
         }
         &-sub{
-            font-size: 3rem;
+            font-size: 2rem;
             color: #323232; 
             line-height: 1.7;
         }
     }
     &__text{
-        font-size: 2.2rem;
+        font-size: 1.8rem;
         line-height: 1.7;
         margin-bottom: 1.5rem;
+        font-weight: 600;
+        font-family: $bs-font-monospace;
+
+        &-g{
+            font-size: 1.5rem !important;
+            font-weight: 700 !important;
+            color: $grey-color-g !important;
+            text-decoration: none;
+            cursor: pointer;
+        }
     }
 }
 
 .active{
     background-color: #0779E4 !important;
     color: #fff !important;
+    position: relative;
     
+
+    &::after {
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+        content: "";
+        width: 0px;
+        height: 0px;
+        border-style: solid;
+        border-width: 10px 10px 0px;
+        border-color:$bs-blue transparent transparent;
+    }
+    
+}
+
+.a{
+    &,
+    &:link,
+    &:visited{
+        border-radius: .3rem;
+        padding: 1.5rem 2rem;
+        color: #878787;
+        font-size: 1.5rem;
+        background-color: #fff;
+        font-weight: 800;
+        text-transform: uppercase;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+   
+}
+
+.achivements {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.8rem;
+
+    &__name {
+        color: $bs-dark;
+        text-transform: uppercase;
+    }
+    &__value {
+        color: $bs-blue;
+    }
+}
+
+.achivement{
+    &__board{
+        width: 100%;
+        border-radius: 3rem;
+        height: 1rem;
+        background-color: $trans-05;
+        overflow: hidden;
+    }
+    &__gauge-html{
+        width: 80%;
+        height: inherit;
+        background-color: $bs-blue;
+    }
+    &__gauge-css{
+        width: 70%;
+        height: inherit;
+        background-color: $bs-blue;
+    }
+    &__gauge-jav{
+        width: 50%;
+        height: inherit;
+        background-color: $bs-blue;
+    }
+    &__gauge-react{
+        width: 70%;
+        height: inherit;
+        background-color: $bs-blue;
+    }
+}
+
+.years{
+    color: $bs-blue;
+    font-size: 1.6rem;
 }

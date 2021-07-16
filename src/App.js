@@ -9,6 +9,7 @@ function App() {
     <div className="App">
       <div className='section'>
         <Router>
+          <Navbar />
           <Header />
           <div className='bg-color'>
             <About />

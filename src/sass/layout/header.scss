@@ -1,22 +1,39 @@
 .header{
     background-color: $navbar-color;
     height: 100vh;
+    font-family: Roboto, Arial, sans-serif;
     
     
     &__tip{
-      width: 5rem;
+      width: 10rem;
       display: flex;
       justify-content: center;
       align-items: center;
-      text-transform: uppercase;
+      text-transform: capitalize;
       line-height: 1.2;
       box-shadow: 0 2rem 4rem rgba( #000000, 0.2);
       margin-bottom: 2rem;
-      font-size: 1rem;
+      font-size: 1.6rem;
       background-color: $white-color;
-      padding: 1rem 1rem;
-      color: $navbar-color;
+      padding: 1rem 0;
+      color: #1580E5;
       border-radius: .3rem;
+      font-weight: 800;
+      position: relative;
+
+      &::after {
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+        content: "";
+        width: 0px;
+        height: 0px;
+        border-style: solid;
+        border-width: 5px 5px 0px;
+        border-color: rgb(255, 255, 255) transparent transparent;
+      }
+
     }
     &__discription{
         width: 80%;
@@ -38,7 +55,7 @@
     &__animate{
         position: relative;
         font-size: 4rem;
-        color: #252836;
+        color: $bs-green;
         text-transform: uppercase;
 
         &::before{
@@ -75,12 +92,13 @@
     &:link,
     &:visited{
         text-decoration: none;
-        padding: 2rem 3rem;
+        padding: 2.5rem 4rem;
         text-transform: uppercase;
-        font-size: 1.6rem;
-        font-weight: 700;
+        font-size: 1.4rem;
+        font-weight: 800;
         border-radius: .8rem;
         cursor: pointer;
+        letter-spacing: .5;
 
         @include respond(phone){
             width: 80%;
@@ -90,7 +108,7 @@
         }
     }
     &-blue{
-        background-color: #0779E4;
+        background-color: $bs-blue;
         color: $white-color;
         margin-right: 1rem;
     }
@@ -108,7 +126,7 @@
         color: $white-color;
         margin-right: 2rem;
         text-transform: uppercase;
-        font-size: 1.2rem;
+        font-size: 1.6rem;
         font-weight: 600;
     }
 }
