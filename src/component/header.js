@@ -1,10 +1,13 @@
 import react from 'react'
 import isaiahImg from '../img/imageIsaiah.png'
 import { Link } from 'react-router-dom'
+import Navbar from './navbar'
 
 const Header = () =>{
     return(
       <div className='header'>
+        <div className='row'>
+        
         <div className='heading'>
           <div className='header__discription'>
             <span className='header__tip'>hi there</span>
@@ -19,15 +22,16 @@ const Header = () =>{
              Vokalia and Consonantia, there live the blind texts.</p>
 
              <div className='header__button'>
-               <a className='btn btn-blue'>hire me &rarr;</a>
-               <a className='btn btn-white'>view potfolio &rarr;</a>
+               <a className='btn btn-blue'>hire me  &rarr;</a>
+               <a className='btn btn-white'>view potfolio  &rarr;</a>
              </div>
              <div className='header__links'>
-               <Link to='/https://web.facebook.com/isaiah.peter.7773' className='links'> facebook</Link>
-               <Link to='/https://www.linkedin.com/in/peter-isaiah-607943200' className='links'> linkedin</Link>
+               <a href='https://web.facebook.com/isaiah.peter.7773' className='links'> +facebook</a>
+               <a href='https://www.linkedin.com/in/peter-isaiah-607943200' className='links'> +linkedin</a>
              </div>
           </div>
       </div>
+        </div>
       </div>
     )
 }

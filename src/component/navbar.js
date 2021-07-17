@@ -15,7 +15,9 @@ const Navbar = () =>{
   }
 
   return(
-    <div className='navbar__container'>
+    <div className='navbar'>
+      <div className='row'>
+      <div className='navbar__container'>
       <h1 className='navbar__logo'>Pe.Isaiah</h1>
       <nav  id='side-bar' className='navbar__content'>
         <ul onClick={hide} className='navbar__ul'>
@@ -28,6 +30,8 @@ const Navbar = () =>{
         </ul>
       </nav>
       <img onClick={show} src={menu} alt='menu' className='navbar-logo menu'/>
+      </div>
+      </div>
     </div>
   )
 }
