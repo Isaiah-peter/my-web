@@ -6,7 +6,7 @@
     }
     &__image{
         width: 45%;
-        height: 100%;
+        height: 80%;
         background-repeat: no-repeat;
         background-size: cover;
         
@@ -75,7 +75,7 @@
 
     &::after {
         position: absolute;
-        bottom: -5px;
+        bottom: -10px;
         left: 50%;
         transform: translateX(-50%);
         content: "";
@@ -132,21 +132,29 @@
         width: 80%;
         height: inherit;
         background-color: $bs-blue;
+
+        animation: lent-80 4s;
     }
     &__gauge-css{
         width: 70%;
         height: inherit;
         background-color: $bs-blue;
+
+        animation: lent-70 4s;
     }
     &__gauge-jav{
         width: 50%;
         height: inherit;
         background-color: $bs-blue;
+
+        animation: lent-50 4s;
     }
     &__gauge-react{
         width: 70%;
         height: inherit;
         background-color: $bs-blue;
+
+        animation: lent-70 4s;
     }
 }
 

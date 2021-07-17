@@ -41,3 +41,22 @@
 .mt-4 {
     margin-top: 7rem;
 }
+
+.center{
+    text-align: center;
+}
+
+.wd-70{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.grid-3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.font-2{
+    font-size: 3rem !important;
+}

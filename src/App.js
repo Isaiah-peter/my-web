@@ -3,6 +3,7 @@ import { BrowserRouter as Router } from 'react-router-dom'
 import Navbar from './component/navbar'
 import Header from './component/header'
 import About from './component/about'
+import Services from "./component/Services";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Header />
           <div className='bg-color'>
             <About />
+            <Services />
           </div>
         </Router>
       </div>

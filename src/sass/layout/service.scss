@@ -1,0 +1,71 @@
+.service{
+    &__head{
+        font-size: 5rem;
+        color: $bs-dark;
+        display: flex;
+        align-items: center;
+        line-height: 1.6;
+    }
+
+    &__contact-me{
+        font-size: 2.5rem;
+        color: $bs-gray;
+    }
+
+    &__contact-me span{
+        color: $bs-blue;
+    }
+
+    &__card{
+        width: 70%;
+        background-color: $bs-white;
+        padding: 6rem;
+        border-radius: .8rem;
+        box-shadow: 0 2rem 4rem rgba($bs-gray-dark, .2);
+
+        &-head{
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: $bs-blue;
+            margin-bottom: 3rem;
+        }
+    }
+    &__icon-box{
+        background-color: $bs-blue;
+        width: 10rem;
+        height: 7rem;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            content: "";
+            width: 0px;
+            height: 0px;
+            border-style: solid;
+            border-width: 10px 10px 0px;
+            border-color:$bs-blue transparent transparent;
+        }
+    }
+
+    &__text{
+        color: $grey-color-g;
+        font-size: 2rem;
+        line-height: 1.5;
+        font-weight: 600;
+        margin-bottom: 3rem;
+    }
+    &__link{
+        &,
+        &:visited,
+        &:link{
+            color: $bs-blue;
+            font-size: 2rem;
+            text-decoration: none;
+            font-weight: 700;
+        }
+    }
+}
+

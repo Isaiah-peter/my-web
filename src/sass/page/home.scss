@@ -1,13 +1,23 @@
 
 .heading{
-   padding-top: 12rem;
+  margin-top: -8rem;
 }
 
 .bg-color{
-    background-color: #F8F8F8;
+    background-color: $bs-gradient;
 }
 
 .abouts{
     padding: 15rem 0;
+}
+
+.service{
+    padding: 15rem 0;
+}
+#service{
+    color: $bs-blue;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 800;
 }
 

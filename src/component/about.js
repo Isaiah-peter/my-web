@@ -35,7 +35,7 @@ const About = () => {
 
   return (
     <div className='row'>
-      <section className='abouts'>
+      <section className='abouts' id='about'>
         <div className='about__page'>
           <div className='about__image' style={{ backgroundImage: `url(${aboutI})` }}></div>
           <div className='about__skills'>
