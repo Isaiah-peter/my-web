@@ -17,7 +17,7 @@ const Navbar = () =>{
   return(
     <div className='navbar'>
       <div className='row'>
-      <div className='navbar__container'>
+      <div className='navbar__container'  data-aos='fade-down'>
       <h1 className='navbar__logo'>Pe.Isaiah</h1>
       <nav  id='side-bar' className='navbar__content'>
         <ul onClick={hide} className='navbar__ul'>

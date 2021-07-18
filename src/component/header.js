@@ -8,7 +8,7 @@ const Header = () => {
     <div className='header' id='head'>
       <div className='row'>
         <div className='heading'>
-          <div className='header__discription'>
+          <div className='header__discription' data-aos='zoom-out-down'>
             <span className='header__tip'>hi there</span>
             <h1 className='header__main'>
               I am Peter Isaiah

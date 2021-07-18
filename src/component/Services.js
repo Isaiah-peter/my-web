@@ -8,7 +8,7 @@ function Services() {
         <div className='center wd-70'>
           <h1 className='service__head '>This is My Expertise, The Services I'll Provide My Clients</h1>
         </div>
-        <div className='grid-3 mt-4'>
+        <div className='grid-3 mt-4' data-aos='flip-up'>
           <div className='service__card'>
             <div className='service__icon-box mb-5'></div>
             <h2 className='service__card-head'>UI & UX Design</h2>

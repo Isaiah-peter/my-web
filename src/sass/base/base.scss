@@ -12,6 +12,7 @@
     html{
       font-size: 63.5%;
       width: 100%;
+      scroll-behavior: smooth;
       @include respond(tab-land){
         font-size: 56.9%;
       }

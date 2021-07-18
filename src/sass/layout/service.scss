@@ -4,6 +4,7 @@
         color: $bs-dark;
         display: flex;
         align-items: center;
+        justify-content: center;
         line-height: 1.6;
     }
 
@@ -22,6 +23,7 @@
         padding: 6rem;
         border-radius: .8rem;
         box-shadow: 0 2rem 4rem rgba($bs-gray-dark, .2);
+        z-index: -10;
 
         &-head{
             font-size: 2.5rem;
@@ -51,7 +53,7 @@
     }
 
     &__text{
-        color: $grey-color-g;
+        color: lighten($bs-gray, 20%);
         font-size: 2rem;
         line-height: 1.5;
         font-weight: 600;
@@ -66,6 +68,30 @@
             text-decoration: none;
             font-weight: 700;
         }
+    }
+}
+
+
+.blue__button{
+    &,
+    &:visited,
+    &:link{
+        border: 1px solid lighten($bs-blue, 10%);
+        padding: 2rem 5rem;
+        font-size: 1.7rem;
+        text-decoration: none;
+        color: lighten($bs-blue, 10%);
+        cursor: pointer !important;
+        transition: all .5s !important;
+        text-transform: uppercase;
+        font-weight: 700;
+        border-radius: .5rem;
+       
+    }
+
+    &:hover{
+        background-color: $bs-blue;
+        color: $bs-white;
     }
 }
 
