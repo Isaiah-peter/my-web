@@ -2,7 +2,7 @@
  width: 100%;
  position: sticky;
  top: 0;
- background-color: $navbar-color;
+ background-color: $bs-blue;
   
   &__container{
     
@@ -46,10 +46,11 @@
 
   &__list{
     list-style: none;
-    font-size: 2rem;
+    font-size: 1.8rem;
+    font-weight: 600;
     
     &:not(:last-child){
-      margin-right: 8rem;
+      margin-right: 6rem;
     }
 
     
@@ -58,7 +59,7 @@
       &:link,
       &:visited{
         text-decoration: none;
-        color: $white-color-2;
+        color: darken($white-color-2, 10%);
         text-transform: capitalize;
       }
 

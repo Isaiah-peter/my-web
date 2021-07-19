@@ -2,6 +2,9 @@
     background-color: $navbar-color;
     height: 100vh;
     font-family: Roboto, Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    
     
     
     &__tip{

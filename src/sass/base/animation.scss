@@ -26,3 +26,57 @@
      border-right: 1px solid #01fe87;
     }
  }
+
+ @keyframes lent-50 {
+   0%{
+       width: 0;
+   }
+   20%{
+    width: 10%;
+   }
+   40%{
+    width: 20%;
+   }
+   70%{
+    width: 30%;
+   }
+   100%{
+    width: 50%;
+   }
+ }
+
+ @keyframes lent-70 {
+    0%{
+        width: 0;
+    }
+    20%{
+     width: 20%;
+    }
+    40%{
+     width: 30%;
+    }
+    70%{
+     width: 50%;
+    }
+    100%{
+     width: 70%;
+    }
+  }
+  @keyframes lent-80 {
+      
+    0%{
+        width: 0;
+    }
+    20%{
+     width: 30%;
+    }
+    40%{
+     width: 40%;
+    }
+    70%{
+     width: 60%;
+    }
+    100%{
+     width: 80%;
+    }
+  }
