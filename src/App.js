@@ -7,6 +7,7 @@ import Header from './component/header'
 import About from './component/about'
 import Services from "./component/Services";
 import Price from "./component/price";
+import Contact from "./component/Contact";
 
 
 
@@ -28,6 +29,7 @@ function App() {
             <Services />
             <Price />
           </div>
+          <Contact />
         </Router>
       </div>
     </div>

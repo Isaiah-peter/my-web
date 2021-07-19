@@ -17,7 +17,7 @@ const Navbar = () =>{
   return(
     <div className='navbar'>
       <div className='row'>
-      <div className='navbar__container'  data-aos='fade-down'>
+      <div className='navbar__container'>
       <h1 className='navbar__logo'>Pe.Isaiah</h1>
       <nav  id='side-bar' className='navbar__content'>
         <ul onClick={hide} className='navbar__ul'>
@@ -25,7 +25,7 @@ const Navbar = () =>{
           <li className='navbar__list'><a href='#about' className='navbar__link'>about</a></li>
           <li className='navbar__list'><a href='#sev' className='navbar__link'>service</a></li>
           <li className='navbar__list'><a href='#' className='navbar__link'>portfolio</a></li>
-          <li className='navbar__list'><a href='#' className='navbar__link'>pricing</a></li>
+          <li className='navbar__list'><a href='#pricing' className='navbar__link'>pricing</a></li>
           <li className='navbar__list'><a href='#' className='navbar__link'>contact</a></li>
         </ul>
       </nav>

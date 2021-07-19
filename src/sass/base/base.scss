@@ -10,9 +10,11 @@
      width: 100%;
     }
     html{
-      font-size: 63.5%;
-      width: 100%;
+      font-size: 50.5%;
       scroll-behavior: smooth;
+      @include respond(big-laptop){
+        font-size: 75%;
+      }
       @include respond(tab-land){
         font-size: 56.9%;
       }
@@ -21,9 +23,6 @@
       }
       @include respond(phone){
         font-size: 40%; //1rem = 8px 8/16
-      }
-      @include respond(big-laptop){
-        font-size: 75%;
       }
     }
 

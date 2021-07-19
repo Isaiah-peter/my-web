@@ -3,7 +3,7 @@ import React from 'react'
 function price() {
   return (
     <div className='row'>
-      <div className='service' id='sev'>
+      <div className='service' id='pricing'>
         <h1 id="service" className='center'>MY PRICING</h1>
         <div className='center wd-70'>
           <h1 className='service__head'>Pricing & Packages</h1>

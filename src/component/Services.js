@@ -8,8 +8,8 @@ function Services() {
         <div className='center wd-70'>
           <h1 className='service__head '>This is My Expertise, The Services I'll Provide My Clients</h1>
         </div>
-        <div className='grid-3 mt-4' data-aos='flip-up'>
-          <div className='service__card'>
+        <div className='grid-3 mt-4' >
+          <div className='service__card' data-aos='flip-up'>
             <div className='service__icon-box mb-5'></div>
             <h2 className='service__card-head'>UI & UX Design</h2>
             <p className='service__text'>
@@ -19,7 +19,7 @@ function Services() {
             </p>
             <a href='#' className='service__link mt-3'>learn more &rarr;</a>
           </div>
-          <div className='service__card'>
+          <div className='service__card' data-aos='flip-up'>
             <div className='service__icon-box mb-5'></div>
             <h2 className='service__card-head'>Web development</h2>
             <p className='service__text'>
@@ -29,7 +29,7 @@ function Services() {
             </p>
             <a href='#' className='service__link'>learn more &rarr;</a>
           </div>
-          <div className='service__card'>
+          <div className='service__card' data-aos='flip-up'>
             <div className='service__icon-box mb-5'></div>
             <h2 className='service__card-head'>Mobile App</h2>
             <p className='service__text'>
