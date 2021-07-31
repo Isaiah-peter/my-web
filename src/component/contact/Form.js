@@ -31,8 +31,9 @@ function Form() {
           className="contact__input" id="message"
           cols="30" rows="4" placeholder="Create a message here"
         />
+        <a href='#' className='contact__btn'> sent message</a>
       </form>
-
+      
     </div>
   )
 }
